@@ -47,7 +47,7 @@ main{
 form{
     width: 100%;
 }
-form > input,form > button{
+form > input,form > button, #readMore{
     width: 73%;
     height: 40px;
     border-radius: 4px;
@@ -56,7 +56,7 @@ form > input,form > button{
     padding: 4px 10px;
     box-shadow: 3px 3px 10px 1px black;
 }
-form>button{
+form>button,#readMore{
     font-weight: bold;
     width: 23.5%;
     margin-left: 6px;
@@ -95,7 +95,7 @@ li{
 
 
 @media only screen and (max-width: 495px) {
-    form > input,form > button{
+    form > input,form > button, #readMore{
         width: 100%;
         border-radius: 4px;
         font-size: large;
@@ -103,7 +103,7 @@ li{
         padding: 4px 10px;
         margin-bottom: .5em;
     }
-    form>button{
+    form>button,#readMore{
         outline: 2px solid var(--primary-color);
         height: 35px;
         color:var(--text);
@@ -113,4 +113,11 @@ li{
     .input, .result {
         padding: 1rem 2.5rem;
     }
+}
+
+.box1{
+    display: none;
+}
+.bold{
+    font-weight: 600;
 }
