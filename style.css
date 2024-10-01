@@ -87,6 +87,10 @@ main > section{
     box-shadow: 4px 4px 16px 1px black;
     font-size: large;
     font-family: math,serif,sans-serif;
+    line-height: 1.5;
+}
+li{
+    list-style-type: number;
 }
 
 
