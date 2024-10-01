@@ -1,0 +1,112 @@
+:root{
+    --primary-color: teal;
+    --bg-color: rgb(201, 201, 201);
+    --mv:770px;
+    --text:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: var(--bg-color);
+}
+header{
+    height: 40px;
+    background-color: var(--primary-color);
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    max-width:770px;
+    padding: 0 14%;
+    height: 100%;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: ui-monospace;
+    color: var(--text);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input,.result{
+    width: 100%;
+    max-width: var(--mv);
+    padding: 1rem 3.5rem ;
+    
+}
+form{
+    width: 100%;
+}
+form > input,form > button{
+    width: 73%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: x-large;
+    outline: 2px solid #ffc955;
+    padding: 4px 10px;
+    box-shadow: 3px 3px 10px 1px black;
+}
+form>button{
+    font-weight: bold;
+    width: 23.5%;
+    margin-left: 6px;
+    outline: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    text-transform: capitalize;
+    color: var(--text);
+    font-weight: bolder;
+}
+form>button:hover{
+    outline: 2px solid white;
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result{
+    border-radius:.5rem ;
+    background-color: var(--bg-color);
+}
+.box{
+    background: #e7f0f3;
+    width: 100%;
+    min-height: 120px;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 16px 1px black;
+    font-size: large;
+    font-family: math,serif,sans-serif;
+}
+
+
+@media only screen and (max-width: 495px) {
+    form > input,form > button{
+        width: 100%;
+        border-radius: 4px;
+        font-size: large;
+        outline: 2px solid #ffc955;
+        padding: 4px 10px;
+        margin-bottom: .5em;
+    }
+    form>button{
+        outline: 2px solid var(--primary-color);
+        height: 35px;
+        color:var(--text);
+        font-weight: bold;
+        margin: 0;
+    }
+    .input, .result {
+        padding: 1rem 2.5rem;
+    }
+}
